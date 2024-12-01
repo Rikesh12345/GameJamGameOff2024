@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6923772559056628207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1250030681054833735}
+  - component: {fileID: 6892775067263627756}
+  - component: {fileID: 2443455658830318423}
+  - component: {fileID: 6285687085700600195}
+  - component: {fileID: 8118181233236107803}
+  - component: {fileID: 8020534935316070422}
+  - component: {fileID: 2142518146068018386}
+  - component: {fileID: 8859267315326370262}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1250030681054833735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923772559056628207}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6892775067263627756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923772559056628207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7843578c4f8924581a4ee9eed28e8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ambienteOcean: {fileID: 8300000, guid: 38304ebd0e9509e469928b27bef28ea0, type: 3}
+  _ambienteSail: {fileID: 8300000, guid: ba383821976747f4da2c826a1e2f2735, type: 3}
+  _waterShader: {fileID: 0}
+  _globalVolume: {fileID: 0}
+  _playerGO: {fileID: 0}
+  _vcam: {fileID: 0}
+  _salvageGO: {fileID: 0}
+  _salvageUI: {fileID: 0}
+  _lootWindowUI: {fileID: 0}
+  _skipTutorial: 0
+  _introTimeline: {fileID: 0}
+  _playerCurrency: {fileID: 0}
+  _hasWorldMap: 0
+  _hasPowderKeg: 0
+  _worldMapButtonGO: {fileID: 0}
+  _worldMapParticleEffectGO: {fileID: 0}
+  _powderKegButtonGO: {fileID: 0}
+  _powderKegParticleEffectGO: {fileID: 0}
+  _healthUI: {fileID: 0}
+  _buttonClickSound: []
+  _isQuitting: 0
+  _isPlayerAtShipyard: 0
+--- !u!114 &2443455658830318423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923772559056628207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 907a6dd0c17d037478cc4c7701a45ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerRowboatPrefab: {fileID: 0}
+  _playerRowboatWithCranePrefab: {fileID: 0}
+  _playerShipSloop2CannonsPrefab: {fileID: 0}
+  _playerShipSloop4CannonsPrefab: {fileID: 0}
+  _playerShipSloop6CannonsPrefab: {fileID: 0}
+  _enemyShipSloop2CannonsPrefab: {fileID: 0}
+  _enemyShipSloop4CannonsPrefab: {fileID: 0}
+  _enemyShipSloop6CannonsPrefab: {fileID: 0}
+  _blackbeardShipPrefab: {fileID: 0}
+  _salvageZones: []
+  _introSalvageZone: {fileID: 0}
+  _salvageZonesCrane: {fileID: 0}
+  _mapGameObjects: []
+  _bayBorder: {fileID: 0}
+  _blackbeardIntroBorder: {fileID: 0}
+  _playerSpawnPoints: []
+  _enemySpawnPoints: []
+  _uiElements: {fileID: 0}
+  _fishingTextGO: {fileID: 0}
+  _rowingTextGO: {fileID: 0}
+  _controlsTutorialGO: {fileID: 0}
+  _guideArrowGo: {fileID: 0}
+  _worldMapControlslGO: {fileID: 0}
+  _powderKegControlslGO: {fileID: 0}
+  _sailingModeControlslGO: {fileID: 0}
+--- !u!114 &6285687085700600195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923772559056628207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8cacb57a8add204e8f5c25d9aeea083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundFXPrefab: {fileID: 6211308567096814630, guid: 1e1850281e26ee34e847df1c8f4a9b44, type: 3}
+  _loopingSoundFXPrefab: {fileID: 6211308567096814630, guid: 2e419083b594433429be66695a0e0c6b, type: 3}
+--- !u!114 &8118181233236107803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923772559056628207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 793f36a6955bfe24ea124df8eb708635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mapDisplay: {fileID: 0}
+  _mapCamera: {fileID: 0}
+--- !u!114 &8020534935316070422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923772559056628207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3946a33281419cf498db03a495ba472e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthUI: {fileID: 0}
+  _healthBarFill: {fileID: 0}
+--- !u!114 &2142518146068018386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923772559056628207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47677531e6505364da337862b3fde8f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _powderKegPrefab: {fileID: 0}
+  _cooldownFillImage: {fileID: 0}
+  _cooldownDuration: 20
+  _kegIntoWaterSFX: []
+--- !u!114 &8859267315326370262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923772559056628207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a351db292966acc4d80f233ea847354e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicSource: {fileID: 0}
+  _volumeAdjustSpeed: 1
+  enemyProximityRange: 50
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
